@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AnyLLM</string>
+
+    <!-- Welcome Screen -->
+    <string name="welcome_description">Connect to any LLM endpoint with a flexible, plug-and-play configuration system.</string>
+    <string name="welcome_get_started">Get Started</string>
+
+    <!-- Profile List -->
+    <string name="profile_list_title">LLM Profiles</string>
+    <string name="profile_add">Add Profile</string>
+    <string name="profile_empty">No profiles yet</string>
+    <string name="profile_empty_hint">Tap + to create your first LLM profile</string>
+
+    <!-- Profile Editor -->
+    <string name="profile_create">Create Profile</string>
+    <string name="profile_edit">Edit Profile</string>
+    <string name="profile_section_basic">Basic Info</string>
+    <string name="profile_section_headers">Request Headers</string>
+    <string name="profile_section_body">Request Body</string>
+    <string name="profile_section_response">Response Extraction</string>
+    <string name="profile_name">Name</string>
+    <string name="profile_url">Endpoint URL</string>
+    <string name="profile_method">HTTP Method</string>
+    <string name="profile_api_key">API Key</string>
+    <string name="profile_header_key">Key</string>
+    <string name="profile_header_value">Value</string>
+    <string name="profile_add_header">Add Header</string>
+    <string name="profile_body_template">Body Template (JSON)</string>
+    <string name="profile_response_jsonpath">Response JSONPath</string>
+    <string name="profile_stream_enabled">Enable Streaming (SSE)</string>
+    <string name="profile_stream_jsonpath">Stream JSONPath</string>
+    <string name="profile_timeout">Timeout</string>
+    <string name="profile_test">Test Connection</string>
+
+    <!-- Chat Screen -->
+    <string name="chat_start">Start Chat</string>
+    <string name="chat_input_hint">Type a message…</string>
+    <string name="sessions">Sessions</string>
+    <string name="session_new">New Session</string>
+    <string name="session_title">Session Title</string>
+    <string name="session_system_prompt">System Prompt (optional)</string>
+    <string name="session_empty">No active session</string>
+
+    <!-- Messages -->
+    <string name="role_user">You</string>
+    <string name="role_assistant">Assistant</string>
+
+    <!-- Common -->
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="delete">Delete</string>
+    <string name="edit">Edit</string>
+    <string name="create">Create</string>
+    <string name="back">Back</string>
+    <string name="send">Send</string>
+    <string name="stop">Stop</string>
+    <string name="settings">Settings</string>
+    <string name="more_options">More options</string>
+    <string name="seconds">seconds</string>
+
+    <!-- Test Results -->
+    <string name="test_success">Success</string>
+    <string name="test_failed">Failed</string>
+</resources>

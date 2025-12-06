@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AnyLLM</string>
+
+    <!-- Welcome Screen -->
+    <string name="welcome_description">通过灵活的即插即用配置系统，连接任意 LLM 端点。</string>
+    <string name="welcome_get_started">开始使用</string>
+
+    <!-- Profile List -->
+    <string name="profile_list_title">LLM 配置</string>
+    <string name="profile_add">添加配置</string>
+    <string name="profile_empty">暂无配置</string>
+    <string name="profile_empty_hint">点击 + 创建您的第一个 LLM 配置</string>
+
+    <!-- Profile Editor -->
+    <string name="profile_create">创建配置</string>
+    <string name="profile_edit">编辑配置</string>
+    <string name="profile_section_basic">基本信息</string>
+    <string name="profile_section_headers">请求头</string>
+    <string name="profile_section_body">请求体</string>
+    <string name="profile_section_response">响应提取</string>
+    <string name="profile_name">名称</string>
+    <string name="profile_url">端点 URL</string>
+    <string name="profile_method">HTTP 方法</string>
+    <string name="profile_api_key">API Key</string>
+    <string name="profile_header_key">键</string>
+    <string name="profile_header_value">值</string>
+    <string name="profile_add_header">添加请求头</string>
+    <string name="profile_body_template">请求体模板 (JSON)</string>
+    <string name="profile_response_jsonpath">响应 JSONPath</string>
+    <string name="profile_stream_enabled">启用流式输出 (SSE)</string>
+    <string name="profile_stream_jsonpath">流式 JSONPath</string>
+    <string name="profile_timeout">超时时间</string>
+    <string name="profile_test">测试连接</string>
+
+    <!-- Chat Screen -->
+    <string name="chat_start">开始聊天</string>
+    <string name="chat_input_hint">输入消息…</string>
+    <string name="sessions">会话</string>
+    <string name="session_new">新建会话</string>
+    <string name="session_title">会话标题</string>
+    <string name="session_system_prompt">系统提示词（可选）</string>
+    <string name="session_empty">暂无活动会话</string>
+
+    <!-- Messages -->
+    <string name="role_user">你</string>
+    <string name="role_assistant">助手</string>
+
+    <!-- Common -->
+    <string name="save">保存</string>
+    <string name="cancel">取消</string>
+    <string name="delete">删除</string>
+    <string name="edit">编辑</string>
+    <string name="create">创建</string>
+    <string name="back">返回</string>
+    <string name="send">发送</string>
+    <string name="stop">停止</string>
+    <string name="settings">设置</string>
+    <string name="more_options">更多选项</string>
+    <string name="seconds">秒</string>
+
+    <!-- Test Results -->
+    <string name="test_success">成功</string>
+    <string name="test_failed">失败</string>
+</resources>
