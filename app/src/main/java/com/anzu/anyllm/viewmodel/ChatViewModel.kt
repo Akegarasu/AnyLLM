@@ -53,6 +53,7 @@ class ChatViewModel @Inject constructor(
 
     private var streamingJob: Job? = null
     private var sessionsJob: Job? = null
+    private var messagesJob: Job? = null
 
     fun loadProfile(profileId: String) {
         viewModelScope.launch {
@@ -76,12 +77,16 @@ class ChatViewModel @Inject constructor(
     }
 
     fun loadSession(sessionId: String) {
-        viewModelScope.launch {
+        messagesJob?.cancel()
+        messagesJob = viewModelScope.launch {
             val session = sessionRepository.getSessionById(sessionId)
             _currentSession.value = session
+            _messages.value = emptyList()
             if (session != null) {
                 messageRepository.getMessagesBySessionId(session.id).collect { messageList ->
-                    _messages.value = messageList
+                    if (_currentSession.value?.id == session.id) {
+                        _messages.value = messageList
+                    }
                 }
             }
         }
@@ -257,5 +262,7 @@ class ChatViewModel @Inject constructor(
     override fun onCleared() {
         super.onCleared()
         streamingJob?.cancel()
+        sessionsJob?.cancel()
+        messagesJob?.cancel()
     }
 }
